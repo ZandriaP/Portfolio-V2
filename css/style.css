@@ -1,0 +1,278 @@
+
+/* Bootstrap Variables Override */
+:root {
+  /* Replace your primary color from your UI Kit */
+  --bs-primary: #182a72;
+
+  /* Replace your primary color from your UI Kit */
+  --primary-dark: #0f1039;
+
+  /* Replace your primary color from your UI Kit */
+  --primary-light: #70d3be; 
+
+  /* Replace your secondary color from your UI Kit */
+  --secondary-color: #20c997; 
+
+  /* Replace your secondary color from your UI Kit */
+  --secondary-dark: #06281e; 
+
+  /* Replace your light color from your UI Kit */
+  --secondary-light: #D2F4EA;  
+
+      /* Replace the main body font from your UI Kit */
+      --bs-font-sans-serif: 'Lato', verdana, sans-serif;
+
+}
+
+body {
+  background-color: #1A2A72;
+}
+
+display-1 {
+  font-family: "Nunito" !important;
+  font-weight: bolder;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 100%;
+  letter-spacing: -0.2rem;
+}
+
+h1 {
+    text-align: center; /* Changes the alignment of all <h1> elements */
+    font-weight: bold;
+    font-family: "Nunito" !important;
+    text-shadow: 0px 4px 10px #1A2A72;
+    font-size: 2.5rem;
+    @media(max-width:700px) {
+      font-size: 1.75rem;
+    }
+}
+
+h2 {
+    text-align: center; /* Changes the alignment of all <h1> elements */
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Nunito" !important;
+  @media(max-width:700px) {
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  text-align: center; /* Changes the alignment of all <h1> elements */
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Nunito" !important;
+}
+
+h5 {
+  text-align: center; /* Changes the alignment of all <h1> elements */
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Nunito" !important;
+}
+
+/* Selects all <p> elements */
+p {
+    color: #0F1039; /* Changes text color to navy blue */
+    font-size:  1rem; /* Sets text size to 1rem */
+    @media(max-width:700px) {
+      font-size: 0.75rem;}
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  font-family: "Lato" !important;
+  border: none;
+  font-weight: bold;
+  color:var(--secondary-light)
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border: none;
+  color:var(--secondary-light)
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  font-family: "Lato" !important;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary-dark);
+  border: none;
+}
+
+.hr {
+  color: #182a72;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: min(0.625rem, 8%) min(1.875rem, 8%);
+}
+
+/*Targets header background graphics */
+.py-3 {
+    background-color: #0F1039;
+    background-image: url("../images/zandria-puaa-selectedworks-background.png");
+    background-size: cover;
+    padding-left: min(5rem, 8%);
+    padding-right: min(6rem, 8%);
+    h1 {
+      @media(max-width:700px) {
+        font-size: 1.5rem;
+      }
+  }
+}
+
+/*Targets hero section background graphics */
+.hero {
+    background-color: #0F1039;
+    background-image: url("../images/zandria-puaa-splash-art.png");
+    background-size: cover;
+    background-position: center;
+    h1 {
+        color: #D2F4EA;
+        text-shadow: 0px 7px 20px #D2F4EA;
+        padding-top: 15rem;
+        padding-bottom: 0.625rem;
+
+      }
+    h2 {
+        color: #D2F4EA;
+        text-shadow: 0px 7px 20px #D2F4EA;
+        padding-top: 0px;
+        padding-bottom: 15rem;
+
+      }
+    }
+
+/*Targets projects section background graphics */
+
+.projects {
+    background-color:#1A2A72;
+    background-image: url("../images/zandria-puaa-selectedworks-background.png");
+    background-size: cover;
+    padding-top: min(2rem, 8%);
+    padding-bottom: min(8rem, 8%);
+    padding-left: min(5rem, 8%);
+    padding-right: min(5rem,8%);
+    h1 {
+        color: #D2F4EA;
+        text-shadow: 0px 4px 10px #D2F4EA;
+        padding-top: 0px;
+        padding-bottom: 32px;
+
+      }
+    h2 {
+        color: #06281E;
+        text-shadow: 0px 4px 10px #06281E;
+
+      }
+}
+
+/*Targets about section background graphics */
+.about {
+    background: linear-gradient(#D2F4EA, #20C997);
+    padding-left: min(4rem, 4%);
+    padding-right: min(4rem, 4%);
+    padding-bottom: min(5rem, 4%);
+    h1 {
+        padding: 2rem;
+      }
+    .headshotphoto img {
+        object-fit: contain;
+        max-width: 100%;
+        height:auto
+      }
+    .text {
+        padding: min(4rem, 4%);
+        p {
+          padding-top: (1rem, 4%);
+          padding-bottom: (1rem, 4%);
+        }
+
+      }
+}
+
+/*Targets project detail section background graphics */
+.detail {
+  background: linear-gradient(#D2F4EA, #20C997);
+  padding-left: min(4rem, 4%);
+  padding-right: min(4rem, 4%);
+  padding-bottom: min(5rem, 4%);
+  h1 {
+      padding: 2rem;
+    }
+  .image img {
+      object-fit: contain;
+    }
+  .text {
+      padding: 4rem;
+      p {
+        padding-bottom: 1rem;
+
+      }
+
+    }
+}
+
+.carousel-item {
+  background: linear-gradient(#D2F4EA, #20C997);
+  color: #1A2A72 
+  background-position: center;
+  background-size: cover;
+}
+
+/*Targets footer graphics and padding */
+footer {
+    text-align: left;
+    padding-top: 0px;
+    padding-left: min(5rem, 8%);
+    padding-right: min(4rem, 8%);
+    padding-bottom: min(2.5rem, 8%);
+    color: #D2F4EA;
+    clear: both;
+    h2 {
+        text-align: left;
+      }
+   }
+
+
+  /*Affects spacing for social media icons */
+  .social-icon {
+    width: 48px; 
+    height: 48px; 
+    margin: 0.5rem;
+    @media(max-width:700px) {
+      width:23px;
+      height:23px;
+      margin: 0.125rem;
+    }
+  }
+  .social-icon:last-child { margin-right: 0; }
+
+  .navbar-toggler-icon
+  {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28112, 211, 190, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-toggler
+  {
+    border-color: #70d3be;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230f1039'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230f1039'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+  }
